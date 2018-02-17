@@ -2,20 +2,23 @@ using System;
 using System.Drawing;
 
 namespace Utils {
-	class JRectangle {
+
+    class JRectangle {
 
         //
-        // Summary
+        // Summary:
+        //
         // The X coordinate of the upper-left corner of the <code>JRectangle</code>.
         //
         // @serial
         // @see #setLocation(int, int)
         // @see #getLocation()
         // @since 1.0
-        private int X { get; set; }
+        public int X { get; set; }
 
         //
-        // Summary
+        // Summary:
+        //
         // The Y coordinate of the upper-left corner of the <code>JRectangle</code>.
         //
         // @serial
@@ -23,20 +26,22 @@ namespace Utils {
         // @see #getLocation()
         // @since 1.0
         //
-        private int Y { get; set; }
+        public int Y { get; set; }
 
         //
-        // Summary
+        // Summary:
+        //
         // The Width of the <code>JRectangle</code>.
         // @serial
         // @see #setSize(int, int)
         // @see #getSize()
         // @since 1.0
         //
-        private int Width { get; set; }
+        public int Width { get; set; }
 
         //
-        // Summary
+        // Summary:
+        //
         // The Height of the <code>JRectangle</code>.
         //
         // @serial
@@ -44,10 +49,11 @@ namespace Utils {
         // @see #getSize()
         // @since 1.0
         //
-        private int Height { get; set; }
+        public int Height { get; set; }
 
         //
-        // Summary
+        // Summary:
+        //
         // Constructs a new <code>JRectangle</code> whose upper-left corner
         // is at (0,&nbsp;0) in the coordinate space, and whose Width and
         // Height are both zero.
@@ -56,7 +62,8 @@ namespace Utils {
         }
 
         //
-        // Summary
+        // Summary:
+        //
         // Constructs a new <code>JRectangle</code>, initialized to match
         // the values of the specified <code>JRectangle</code>.
         // @param r  the <code>JRectangle</code> from which to copy initial values
@@ -67,7 +74,8 @@ namespace Utils {
         }
 
         //
-        // Summary
+        // Summary:
+        //
         // Constructs a new <code>JRectangle</code> whose upper-left corner is
         // specified as
         // {@code (X,Y)} and whose Width and Height
@@ -86,7 +94,8 @@ namespace Utils {
         }
 
         //
-        // Summary
+        // Summary:
+        //
         // Constructs a new <code>JRectangle</code> whose upper-left corner
         // is at (0,&nbsp;0) in the coordinate space, and whose Width and
         // Height are specified by the arguments of the same name.
@@ -97,7 +106,8 @@ namespace Utils {
         }
 
         //
-        // Summary
+        // Summary:
+        //
         // Constructs a new <code>JRectangle</code> whose upper-left corner is
         // specified by the {@link Point} argument, and
         // whose Width and Height are specified by the
@@ -111,7 +121,8 @@ namespace Utils {
         }
 
         //
-        // Summary
+        // Summary:
+        //
         // Constructs a new <code>JRectangle</code> whose upper-left corner is the
         // specified <code>Point</code>, and whose Width and Height are both zero.
         // @param p a <code>Point</code> that is the top left corner
@@ -121,7 +132,8 @@ namespace Utils {
         }
 
         //
-        // Summary
+        // Summary:
+        //
         // Constructs a new <code>JRectangle</code> whose top left corner is
         // (0,&nbsp;0) and whose Width and Height are specified
         // by the <code>Size</code> argument.
@@ -131,7 +143,8 @@ namespace Utils {
         }
 
         //
-        // Summary
+        // Summary:
+        //
         // Gets the bounding <code>JRectangle</code> of this <code>JRectangle</code>.
         // <p>
         // This method is included for completeness, to parallel the
@@ -149,7 +162,8 @@ namespace Utils {
         }
 
         //
-        // Summary
+        // Summary:
+        //
         // Sets the bounding <code>JRectangle</code> of this <code>JRectangle</code>
         // to match the specified <code>JRectangle</code>.
         // <p>
@@ -165,7 +179,8 @@ namespace Utils {
         }
 
         //
-        // Summary
+        // Summary:
+        //
         // Sets the bounding <code>JRectangle</code> of this
         // <code>JRectangle</code> to the specified
         // <code>X</code>, <code>Y</code>, <code>Width</code>,
@@ -183,12 +198,16 @@ namespace Utils {
         // @see       java.awt.Component#setBounds(int, int, int, int)
         // @since     1.1
         //
-        public void SetBounds(int X, int Y, int Width, int Height) {
-            SetBounds(X, Y, Width, Height);
+        public void SetBounds(int x, int y, int width, int height) {
+            this.X = x;
+            this.Y = y;
+            this.Width = width;
+            this.Height = height;
         }
 
         //
-        // Summary
+        // Summary:
+        //
         // Sets the bounds of this {@code JRectangle} to the integer bounds
         // which encompass the specified {@code X}, {@code Y}, {@code Width},
         // and {@code Height}.
@@ -248,7 +267,8 @@ namespace Utils {
         }
 
         //
-        // Summary
+        // Summary:
+        //
         // Returns the location of this <code>JRectangle</code>.
         // <p>
         // This method is included for completeness, to parallel the
@@ -265,7 +285,8 @@ namespace Utils {
         }
 
         //
-        // Summary
+        // Summary:
+        //
         // Moves this <code>JRectangle</code> to the specified location.
         // <p>
         // This method is included for completeness, to parallel the
@@ -281,7 +302,8 @@ namespace Utils {
         }
 
         //
-        // Summary
+        // Summary:
+        //
         // Moves this <code>JRectangle</code> to the specified location.
         // <p>
         // This method is included for completeness, to parallel the
@@ -298,7 +320,8 @@ namespace Utils {
         }
 
         //
-        // Summary
+        // Summary:
+        //
         // Translates this <code>JRectangle</code> the indicated distance,
         // to the right along the X coordinate axis, and
         // downward along the Y coordinate axis.
@@ -377,7 +400,8 @@ namespace Utils {
         }
 
         //
-        // Summary
+        // Summary:
+        //
         // Gets the size of this <code>JRectangle</code>, represented by
         // the returned <code>Size</code>.
         // <p>
@@ -395,7 +419,8 @@ namespace Utils {
         }
 
         //
-        // Summary
+        // Summary:
+        //
         // Sets the size of this <code>JRectangle</code> to match the
         // specified <code>Size</code>.
         // <p>
@@ -411,7 +436,8 @@ namespace Utils {
         }
 
         //
-        // Summary
+        // Summary:
+        //
         // Sets the size of this <code>JRectangle</code> to the specified
         // Width and Height.
         // <p>
@@ -429,7 +455,8 @@ namespace Utils {
         }
 
         //
-        // Summary
+        // Summary:
+        //
         // Checks whether or not this <code>JRectangle</code> contains the
         // specified <code>Point</code>.
         // @param p the <code>Point</code> to test
@@ -443,7 +470,8 @@ namespace Utils {
         }
 
         //
-        // Summary
+        // Summary:
+        //
         // Checks whether or not this <code>JRectangle</code> contains the
         // point at the specified location {@code (X,Y)}.
         //
@@ -460,7 +488,8 @@ namespace Utils {
         }
 
         //
-        // Summary
+        // Summary:
+        //
         // Checks whether or not this <code>JRectangle</code> entirely contains
         // the specified <code>JRectangle</code>.
         //
@@ -475,7 +504,8 @@ namespace Utils {
         }
 
         //
-        // Summary
+        // Summary:
+        //
         // Checks whether this <code>JRectangle</code> entirely contains
         // the <code>JRectangle</code>
         // at the specified location {@code (X,Y)} with the
@@ -548,7 +578,8 @@ namespace Utils {
         }
 
         //
-        // Summary
+        // Summary:
+        //
         // Determines whether or not this <code>JRectangle</code> and the specified
         // <code>JRectangle</code> intersect. Two rectangles intersect if
         // their intersection is nonempty.
@@ -582,7 +613,8 @@ namespace Utils {
         }
 
         //
-        // Summary
+        // Summary:
+        //
         // Computes the intersection of this <code>JRectangle</code> with the
         // specified <code>JRectangle</code>. Returns a new <code>JRectangle</code>
         // that represents the intersection of the two rectangles.
@@ -619,7 +651,8 @@ namespace Utils {
         }
 
         //
-        // Summary
+        // Summary:
+        //
         // Computes the union of this <code>JRectangle</code> with the
         // specified <code>JRectangle</code>. Returns a new
         // <code>JRectangle</code> that
@@ -682,9 +715,10 @@ namespace Utils {
         }
 
         //
-        // Summary
-        // Adds a point, specified by the integer arguments {@code newX,newY}
-        // to the bounds of this {@code JRectangle}.
+        // Summary::
+        //
+        //      Adds a point, specified by the integer arguments {@code newX,newY}
+        //      to the bounds of this {@code JRectangle}.
         // <p>
         // If this {@code JRectangle} has any Size less than zero,
         // the rules for <a href=#NonExistant>non-existent</a>
@@ -734,7 +768,8 @@ namespace Utils {
         }
 
         //
-        // Summary
+        // Summary:
+        //
         // Adds the specified {@code Point} to the bounds of this
         // {@code JRectangle}.
         // <p>
@@ -766,7 +801,8 @@ namespace Utils {
         }
 
         //
-        // Summary
+        // Summary:
+        //
         // Adds a <code>JRectangle</code> to this <code>JRectangle</code>.
         // The resulting <code>JRectangle</code> is the union of the two
         // rectangles.
@@ -823,7 +859,8 @@ namespace Utils {
         }
 
         //
-        // Summary
+        // Summary:
+        //
         // Resizes the <code>JRectangle</code> both horizontally and vertically.
         // <p>
         // This method modifies the <code>JRectangle</code> so that it is
@@ -900,12 +937,17 @@ namespace Utils {
         }
 
         //
-        // Summary
+        // Summary:
+        //
         // {@inheritDoc}
         // @since 1.2
         //
         public bool IsEmpty() {
             return (Width <= 0) || (Height <= 0);
+        }
+
+        public override string ToString() {
+            return "[x=" + X + ",y=" + Y + ",width=" + Width + ",height=" + Height + "]";
         }
     }
 }
