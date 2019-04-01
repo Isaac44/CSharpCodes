@@ -3,6 +3,9 @@ using System.Diagnostics;
 using System.Runtime.InteropServices;
 using System.Windows.Forms;
 
+// CREDITS: https://stackoverflow.com/questions/28529000/get-itextdocument-for-a-richtextbox-in-c-sharp
+// CREDITS: www.codeproject.com/Articles/4528/Use-IRichEditOle-from-C
+
 namespace RichExtensions
 {
     [ComImport, InterfaceType(ComInterfaceType.InterfaceIsIUnknown), Guid("00020D00-0000-0000-c000-000000000046")]
