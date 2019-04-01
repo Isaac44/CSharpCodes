@@ -1,4 +1,11 @@
-public class External
+using System;
+using System.Drawing;
+using System.Runtime.InteropServices;
+using System.Windows.Forms;
+
+namespace RichExtensions
+{
+    public class External
     {
         // ---------------------------------------------------------------------------------------------
         // UI Lock
@@ -43,3 +50,4 @@ public class External
         [DllImport("user32.dll")]
         public static extern int SendMessage(IntPtr hWnd, int msg, int wParam, ref Point lParam);
     }
+}
